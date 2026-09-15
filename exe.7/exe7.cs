@@ -1,6 +1,7 @@
 using System;
+using System.Globalization;
 
-class caixa
+class Caixa
 {
     static void Main()
     {
@@ -14,9 +15,10 @@ class caixa
 
         int opcao = 0;
         double preco = 0.0;
-        string nomeproduto = "";
+        string nomeProduto = "";
 
-        while (opcao < 1 / opcao >3 )
+        // Correção: usando '||' (ou) e removendo o ponto e vírgula incorreto
+        while (opcao < 1 || opcao > 3)
         {
             Console.Write("\nDigite o número do produto desejado (1, 2 ou 3): ");
 
@@ -25,26 +27,31 @@ class caixa
                 switch (opcao)
                 {
                     case 1:
-                    nomeproduto = "Cachorro Quente";
-                    preco = 4.00;
-                    break;
+                        nomeProduto = "Cachorro Quente";
+                        preco = 4.00;
+                        break;
 
                     case 2:
-                    nomeproduto = "X-Salada";
-                    preco = 4.50;
-                    break;
+                        nomeProduto = "X-Salada";
+                        preco = 4.50;
+                        break;
                     
                     case 3:
-                    nomeproduto = "Refigerante";
-                    preco = 1.50;
-                    break;
+                        nomeProduto = "Refrigerante"; // Corrigido o typo "Refigerante"
+                        preco = 1.50;
+                        break;
+                    
+                    default:
+                        Console.WriteLine("Opção inválida! Escolha 1, 2 ou 3.");
+                        break;
                 }
             }
             else
             {
-                Console.WriteLine("digite um numero valido");
+                Console.WriteLine("Digite um número válido!");
             }
         }
+
         Console.Write($"Digite a quantidade de '{nomeProduto}': ");
         int quantidade = int.Parse(Console.ReadLine());
 
@@ -54,6 +61,5 @@ class caixa
         Console.WriteLine($"Produto: {nomeProduto}");
         Console.WriteLine($"Quantidade: {quantidade}");
         Console.WriteLine($"Total a pagar: R$ {total.ToString("F2", CultureInfo.InvariantCulture)}");
-
     }
 }
