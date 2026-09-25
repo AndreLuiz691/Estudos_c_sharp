@@ -1,0 +1,5 @@
+C:\Users\ltaun\Desktop\Projetos\Estudos_c_sharp\XadrezConsole\obj\Debug\net10.0\XadrezConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ltaun\Desktop\Projetos\Estudos_c_sharp\XadrezConsole\obj\Debug\net10.0\XadrezConsole.AssemblyInfoInputs.cache
+C:\Users\ltaun\Desktop\Projetos\Estudos_c_sharp\XadrezConsole\obj\Debug\net10.0\XadrezConsole.AssemblyInfo.cs
+C:\Users\ltaun\Desktop\Projetos\Estudos_c_sharp\XadrezConsole\obj\Debug\net10.0\XadrezConsole.csproj.CoreCompileInputs.cache
+C:\Users\ltaun\Desktop\Projetos\Estudos_c_sharp\XadrezConsole\obj\Debug\net10.0\XadrezConsole.sourcelink.json
